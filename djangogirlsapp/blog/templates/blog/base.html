@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CovidBlog</title>
+        <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+        <body>
+            <nav class="navbar is-info">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item"><strong>Covid Blogs</strong></a>
+                </div>
+                <button class="login" href="/">Login</button>
+            </nav>
+            <style>
+                .login{
+                    margin-left: 1200px;
+                    padding: 15px 35px;
+                    background-color: aquamarine;
+                    transition-duration: 0.4s;
+                    font-size: 20px;
+                    color: white;
+                }
+                .login:hover{
+                    background-color: skyblue;
+                    color: white;
+                }
+            </style>
+
+            <section class="section">
+                <div class="container">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </section>
+        </body>
+    </head>
+</html>
